@@ -76,3 +76,6 @@ this.brand = name;
 
 const mybag = new Bag("Birkin");
 console.log(mybag.present());
+
+/*Class Inheritance*/
+// we use the extends keyword
