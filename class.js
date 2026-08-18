@@ -59,4 +59,11 @@ class Car{
 }
 
 const theCar = new Car("Ford");
-console.log(theCar);
+console.log(theCar);// this needs some fixing
+
+/*Methods in classes*/
+class Bag{
+    constructor(name){
+this.brand = name;
+    }
+}
