@@ -36,6 +36,7 @@ product1.displayProduct();
 const total = product1.calculateTotal(salesTax);
 console.log(`Total price (with tax): $${total.toFixed(2)}`);
 
+//Example 2
 class car{
     constructor(name, year){
         this.name = name;
@@ -49,3 +50,13 @@ class car{
 
 const myCar = new car("Ford", 2014);
 console.log( `My car is ${myCar.age()} years old`);
+
+//example 3
+class Car{
+    constructor(name){
+        this.brand = name;
+    }
+}
+
+const theCar = new Car("Ford");
+console.log(theCar);
