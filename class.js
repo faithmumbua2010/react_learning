@@ -91,7 +91,7 @@ this.brand = name;
 
 class Model extends Carr{
     constructor(name, mod){
-        super(name);
+        super(name);// super() method- refers to the parent class
         this.model= mod;
     }
     show(){
