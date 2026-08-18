@@ -5,7 +5,7 @@
 /* class className(object){
     constructorKeyword(parameters){... }
 
-    create a function---- inside a class youy do not need to use the function keyword
+    create a function---- inside a class you do not need to use the function keyword
 }*/
 
 class product{
@@ -55,6 +55,7 @@ console.log( `My car is ${myCar.age()} years old`);
 class Car{
     constructor(name){
         this.brand = name;
+    
     }
 }
 
@@ -62,8 +63,16 @@ const theCar = new Car("Ford");
 console.log(theCar);// this needs some fixing
 
 /*Methods in classes*/
+// creating a method called present
 class Bag{
     constructor(name){
 this.brand = name;
     }
+
+    present(){
+     return 'I have a ' + this.brand;
+    }
 }
+
+const mybag = new Bag("Birkin");
+console.log(mybag.present());
