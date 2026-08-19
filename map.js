@@ -28,3 +28,13 @@ function upperCase(element){
 }
 
 //example 3
+const pupils= ["SPONGEBOB", "PATRICK", "SQUIDWARD", "SANDY"];
+const pupilslower= pupils.map(lowerCase);
+
+console.log(pupilslower);
+
+function lowerCase(element){
+    return element.toLowerCase();
+}
+
+//example 4
