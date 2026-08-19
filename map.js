@@ -38,3 +38,11 @@ function lowerCase(element){
 }
 
 //example 4
+const dates = ["2024-1-10", "2026-3-17", "2026-8-20", ];
+const formattedDates = dates.map(formatDates);
+console.log(formattedDates)
+
+function formatDates(element){
+    const parts = element.split("-");
+    return `${parts[1]} / ${parts[2]}/${parts[0]}`;
+}
