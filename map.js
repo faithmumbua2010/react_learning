@@ -7,6 +7,7 @@ const squares = numbers.map(square);
 const cubes = numbers.map(cube);
 
 console.log(squares);
+console.log(cubes);
 
 function square(element){
     return Math.pow(element, 2)
@@ -15,3 +16,15 @@ function square(element){
 function cube(element){
     return Math.pow(element, 3)
 }
+
+//Example 2
+const students= ["spongebob", "patrick", "squidward", "sandy"];
+const studentsUpper= students.map(upperCase);
+
+console.log(studentsUpper);
+
+function upperCase(element){
+    return element.toUpperCase();
+}
+
+//example 3
