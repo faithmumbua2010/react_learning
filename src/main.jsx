@@ -1,8 +1,5 @@
 
-import { createRoot } from 'react-dom/client'
+import { createRoot } from "react-dom/client";
+import Car from "./Vehicle.jsx";
 
-const myElement = <h1>I Love JSX!</h1>;
-
-createRoot(document.getElementById('root')).render(
-  myElement
-);
+createRoot(document.getElementById('root')).render(<Car />);
