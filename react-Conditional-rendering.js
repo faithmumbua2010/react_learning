@@ -12,3 +12,4 @@ createRoot(document.getElementById('root')).render(
     <Goal isGoal={false}/>
 );
 
+//Logical && Operator
