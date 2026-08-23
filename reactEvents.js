@@ -7,6 +7,7 @@ function Football(){ //the function component starts with uppercase
  }
 
  return(
-
+   <button onClick={shoot}>Take the shot!</button>
  )
+// createRoot(document.getElementById('root)).render(<Football/>);
 }
