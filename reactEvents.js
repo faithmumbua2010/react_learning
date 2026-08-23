@@ -17,7 +17,12 @@ function Football(){ //the function component starts with uppercase
 //To pass an arguement to an event handler , use arrow functions
 
 function Football(){
-    const shoot= (a)=>{// (a) is the parameter of the arrow function meaning the function takes one input(a)
+    const shoot= (a)=>{// (a) is the parameter of the arrow function meaning the function takes one input(a)\
+        alert(a);
+  }
 
+  return (
+    <button onClick={()=>shoot("Goal!")}>Take the shot!</button>
+  );
     }
-}
+  
