@@ -1,3 +1,4 @@
+import { createRoot } from "react-dom/client";
 
 
 //if Statement
@@ -13,3 +14,14 @@ createRoot(document.getElementById('root')).render(
 );
 
 //Logical && Operator
+function Car(props){
+    return(
+        <>
+        {props.brand && <h1>My car is a {props.brand}!</h1>}
+        </>
+    )
+}
+
+createRoot(document.getElementById('root')).render(
+    <Car brand="Ford"/>
+);
