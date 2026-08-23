@@ -11,3 +11,6 @@ function Football(){ //the function component starts with uppercase
  )
 // createRoot(document.getElementById('root)).render(<Football/>);
 }
+
+
+//Passing Arguements
