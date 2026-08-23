@@ -2,5 +2,7 @@
 //Example 
 
 function Football(){ //the function component starts with uppercase
-
+ const shhot= ()=>{
+    
+ }
 }
