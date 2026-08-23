@@ -2,7 +2,11 @@
 //Example 
 
 function Football(){ //the function component starts with uppercase
- const shhot= ()=>{
-    alert("Great shot");
+ const shoot= ()=>{
+    alert("Great shot!");
  }
+
+ return(
+
+ )
 }
