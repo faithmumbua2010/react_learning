@@ -14,3 +14,4 @@ function Football(){ //the function component starts with uppercase
 
 
 //Passing Arguements
+//To pass an arguement to an event handler , use arrow functions
