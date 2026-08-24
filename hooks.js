@@ -21,7 +21,8 @@ useState accepts initial state and returns two values:
 import  {useState} from "react";
 
 function App(){
-    const[count, setCount] = useState(0);
+    const[count, setCount] = useState(0);// count- our current state  setCount-function used to update our state
+    // we set the initial state to 0
     const increment = ()=>setCount(count + 1);
     const decrement = ()=> setCount(count - 1);
 
@@ -33,3 +34,17 @@ function App(){
         </>
     );
 }
+
+// Read state
+import { useState } from 'react';
+import { createRoot } from 'react-dom/client';
+
+function FavoriteColor() {
+  const [color, setColor] = useState("red");
+
+  return <h1>My favorite color is {color}!</h1>
+}
+
+createRoot(document.getElementById('root')).render(
+  <FavoriteColor />
+);
