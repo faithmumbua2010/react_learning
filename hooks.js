@@ -122,3 +122,41 @@ function MyCar() {
 createRoot(document.getElementById('root')).render(
   <MyCar />
 );
+
+//Updating Objects and Arrays in State
+/* When state is updated, the entire state gets overwritten.*/
+
+import { useState } from 'react';
+import { createRoot } from 'react-dom/client';
+
+function MyCar() {
+  const [car, setCar] = useState({
+    brand: "Ford",
+    model: "Mustang",
+    year: "1964",
+    color: "red"
+  });
+
+  const updateColor = () => {
+    setCar(previousState => {
+      return { ...previousState, color: "blue" }
+    });
+  }
+
+  return (
+    <>
+      <h1>My {car.brand}</h1>
+      <p>
+        It is a {car.color} {car.model} from {car.year}.
+      </p>
+      <button
+        type="button"
+        onClick={updateColor}
+      >Blue</button>
+    </>
+  )
+}
+
+createRoot(document.getElementById('root')).render(
+  <MyCar />
+);
