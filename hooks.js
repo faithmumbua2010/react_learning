@@ -10,3 +10,6 @@ rules: they can only be called inside react function components
 
 //State Hooks
 // . useState   . useReducer
+/* useState : used to declare state variables in functional components, 
+allowing us to read and update the state within the component
+*/
