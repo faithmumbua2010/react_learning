@@ -1,3 +1,7 @@
 /* 
 The useContext hook allows functional components to directly access values from the React Context API without prop drilling.
+
+.Simplifies data sharing across the component tree.
+.Eliminates the need to pass props manually through multiple levels.
+.Makes context consumption cleaner and more readable.
 */
