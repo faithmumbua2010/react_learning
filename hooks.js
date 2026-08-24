@@ -12,4 +12,24 @@ rules: they can only be called inside react function components
 // . useState   . useReducer
 /* useState : used to declare state variables in functional components, 
 allowing us to read and update the state within the component
+
+useState accepts initial state and returns two values:
+   .The current state
+   .A function that updates the state
 */
+
+import  {useState} from "react";
+
+function App(){
+    const[count, setCount] = useState(0);
+    const increment = ()=>setCount(count + 1);
+    const decrement = ()=> setCount(count - 1);
+
+    return(
+        <>
+        <h1>Count: {count} </h1>{/*display current count*/}
+        <button onClick={increment}>Increment</button>
+        <button onClick={decrement}>Decrement</button>
+        </>
+    );
+}
