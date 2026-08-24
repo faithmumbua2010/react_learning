@@ -18,10 +18,13 @@ useState accepts initial state and returns two values:
    .A function that updates the state
 */
 
+//SYNTAX
+/* const [state, setState] = useState(initialState); */
+
 import  {useState} from "react";
 
 function App(){
-    const[count, setCount] = useState(0);// count- our current state  setCount-function used to update our state
+    const[count, setCount] = useState(0);// count- our current value of the state  setCount-function used to update our state
     // we set the initial state to 0
     const increment = ()=>setCount(count + 1);
     const decrement = ()=> setCount(count - 1);

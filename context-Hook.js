@@ -1,0 +1,3 @@
+/* 
+The useContext hook allows functional components to directly access values from the React Context API without prop drilling.
+*/
