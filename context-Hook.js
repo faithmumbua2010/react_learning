@@ -76,3 +76,17 @@ function Component3(){
 createRoot(document.getElementById('root')).render(
     <Component1 />
 )
+
+
+const moods = {
+    happy:'😄' ,
+    sad:'😔'
+}
+
+const MoodContext = createContext(moods);
+
+function App(props){
+    return(
+        <MoodContext.Provider></MoodContext.Provider>
+    )
+}

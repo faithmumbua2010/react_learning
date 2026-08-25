@@ -21,6 +21,28 @@ useState accepts initial state and returns two values:
 //SYNTAX
 /* const [state, setState] = useState(initialState); */
 
+import { useState } from "react";
+
+import { createRoot } from "react-dom/client";
+
+function Counter(){
+    const[count, setCount]= useState(0);
+
+    return(
+        <>
+        <p>You clicked {count} times</p>
+        <button onClick={ ()=>setCount(count + 1)}>Click Me</button>
+        </>
+    );
+}
+
+createRoot(document.getElementById('root')).render(
+    <Counter />
+)
+
+
+
+
 import  {useState} from "react";
 
 function App(){
